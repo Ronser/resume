@@ -5,15 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Ronan Hennessy - CV</title>
+        <title>Ronan Hennessy</title>
         <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-
         <script src="https://cdn.rawgit.com/wvengen/d3-wordcloud/master/lib/d3/d3.js"></script>
         <script src="https://cdn.rawgit.com/wvengen/d3-wordcloud/master/lib/d3/d3.layout.cloud.js"></script>
         <script src="https://cdn.rawgit.com/wvengen/d3-wordcloud/master/d3.wordcloud.js"></script>
-
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
@@ -35,7 +33,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html#blog">Technically thinking</a></li>
+                    
                 </ul>
             </div>
         </nav>
@@ -45,21 +43,50 @@
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
-                        Technically
-                        <span class="text-primary">Thinking</span>
+                    Technically
+                    <span class="text-primary">Thinking</span>
                     </h1>
                 </div>
             </section>
             <hr class="m-0" />
             <!-- Experience-->
-            <section class="resume-section" id="experience">
+            <section class="resume-section" id="hosting">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Hosting this site!</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             
-                            <div class="subheading mb-3">Coming soon...</div>
-                            <p>I'll discuss how I hosted this bootstrap website on AWS from an S3 storage bucket.</p>
+                            <div class="subheading mb-3">Hosting a website with a custom domain in an S3 bucket</div>
+                            <p>AWS's S3 storage option offers a cost effective and straightforward solution to hosting a digital portfolio or CV. I developed a Bootstrap site, used git during development for version control, and uploaded the master branch to an S3 bucket for hosting. Refer to my GitHub repository for this site <a href="https://github.com/Ronser/resume">here</a>.</p>
+                            
+                            <p>The basic steps in hosting a website with a custom domain in an S3 bucket are the following:</p>
+                            <ul>
+                                <li>Register a domain for your site.</li>
+                                <li>Create an S3 bucket for your HTML files and assets.</li>
+                                <li>Configure your bucket to allow for public access to the Internet.</li>
+                                <li>Route DNS traffic for your domain to your website bucket.</li>
+                            </ul>
+                            <p>You can visit the official AWS documentation for completing these steps here: <a href="https://github.com/Ronser/resume">https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html</a></p>
+                            <div class="alert alert-dark" role="alert">
+                                <p>Take note! I opened an issue on AWS's GitHub page for these steps: <a href="https://github.com/Ronser/resume">https://github.com/awsdocs/amazon-route53-docs/issues/30</a></p>
+                                <p>The documentation seems to be out of step with some of the dialogs. Read this issue to see some potential pitfalls with the documentation at present.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+            <section class="resume-section" id="hosting">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Building a mobile GPS-enabled air quality sensor</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            
+                            <p>I will shortly be detailing a prototype of a mobile air quality sensor that reports the air quality and your GPS coordinates to a website. Stay tuned....</p>
+                            
+                            
                         </div>
                         
                     </div>
@@ -68,9 +95,9 @@
             </section>
             <hr class="m-0" />
             
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>       
-        <!-- Core theme JS-->
-        <script src="../js/scripts.js"></script>
-    </body>
-</html>
+            <!-- Bootstrap core JS-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Core theme JS-->
+            <script src="../js/scripts.js"></script>
+        </body>
+    </html>
